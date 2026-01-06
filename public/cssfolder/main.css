@@ -14,10 +14,15 @@
 body{
   margin:0;
   background:var(--bg);
-   font-family: "Poppins";  
+  font-family: "Poppins";  
 }
 
 /* ================= HEADER ================= */
+.header 
+.topbar{
+    background-color:var(#e9e7f3) ;
+}
+
 .topbar{
   position:relative;
   padding:22px 26px;
