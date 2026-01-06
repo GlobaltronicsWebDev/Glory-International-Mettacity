@@ -29,7 +29,7 @@
     <div class="actions">
       <button class="visit-btn" type="button" id="visitBtn">
         <span class="txt">Plan Your Visit</span>
-        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        <span class="arrow">→</span>
       </button>
 
       <button class="icon" type="button" aria-label="Facebook">
