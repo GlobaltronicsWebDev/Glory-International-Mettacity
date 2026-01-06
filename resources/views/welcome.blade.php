@@ -11,7 +11,7 @@
 <body>
     <div class="hero">
         <center><h1>Welcome to GLORY INTERNATIONAL METACITY</h1></center>
-        <p>Building community and excellence together.</p>
+        <center><p>Building community and excellence together.</p></center>
     </div>
 </body>
 </html>
