@@ -161,8 +161,7 @@ body{
   border-radius:999px;
   display:grid;
   place-items:center;
-  font-weight:900;
-  font-size:18px;
+  font-size:16px;
 }
 
 /* Social Icons */
@@ -175,12 +174,12 @@ body{
   place-items:center;
   background:transparent;
   cursor:pointer;
+  color:#000;
+  font-size:18px;
 }
 
-.icon svg{
-  width:18px;
-  height:18px;
-  fill:#000;
+.icon:hover{
+  transform:translateY(-1px);
 }
 
 /* ================= RESPONSIVE ================= */
