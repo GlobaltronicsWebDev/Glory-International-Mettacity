@@ -16,9 +16,7 @@
       <a href="#" data-nav="about">About Us</a>
       <a class="active" href="#" data-nav="pricing">Pricing</a>
       <a href="#" data-nav="contact">Contact</a>
-      <a href="#" class="dropdown" data-nav="merch">
-        Merch <span class="caret">▼</span>
-      </a>
+     <a href="#" class="dropdown">Merch ▼</a>
     </nav>
 
     <!-- PERFECTLY CENTERED BRAND -->
