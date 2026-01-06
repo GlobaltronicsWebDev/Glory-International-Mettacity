@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'GLORY INTERNATIONAL METACITY')</title>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="{{ asset('cssfolder/main.css') }}" as="style">
+    <link rel="preload" href="{{ asset('assets/MettaCity_BG.png') }}" as="image">
     <!-- Include CSS using the asset helper for proper pathing -->
-    <link rel="stylesheet" href="{{ asset('cssfolder\main.css') }}">
-    <link rel="icon" href="{{ asset('public\favicon.ico') }}">
-  
-   
+    <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
     <div class="hero">
