@@ -146,7 +146,7 @@ body{
   gap:12px;
   background:var(--dark);
   color:#fff;
-  padding:10px 12px 10px 5px;
+  padding:10px 12px 10px 20px;
   border-radius:900px;
   border:0;
   font-weight:800;
