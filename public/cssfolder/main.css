@@ -146,8 +146,8 @@ body{
   gap:12px;
   background:var(--dark);
   color:#fff;
-  padding:10px 12px 10px 16px;
-  border-radius:500px;
+  padding:10px 12px 10px 5px;
+  border-radius:900px;
   border:0;
   font-weight:800;
   cursor:pointer;
