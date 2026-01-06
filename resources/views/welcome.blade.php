@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="hero">
-        <center><h1>Welcome to GLORY INTERNATIONAL METACITY</h1></center>
+        <center><h1 style="font-family: 'Courier New', Courier, monospace;">Welcome to GLORY INTERNATIONAL METACITY</h1></center>
         <center><p>Building community and excellence together.</p></center>
     </div>
 </body>
