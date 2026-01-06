@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  
+    <p>@yield('Hello World')</p>
 
 </body>
 </html>
