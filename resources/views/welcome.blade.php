@@ -6,11 +6,14 @@
     <title>@yield('title', 'GLORY INTERNATIONAL METACITY')</title>
     <!-- Include CSS using the asset helper for proper pathing -->
     <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
-    <link rel="icon" href="{{ asset('public\favicon.ico') }}">
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+</head>
 </head>
 <body>
-
-    <h1>@yield('Hello World')</h1>
+    <div class="hero">
+        <h1>Welcome to GLORY INTERNATIONAL METACITY</h1>
+        <p>Building community and excellence together.</p>
+    </div>
 
 </body>
 </html>
