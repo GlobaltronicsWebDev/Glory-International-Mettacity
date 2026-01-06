@@ -11,7 +11,7 @@
 <body>
     <div class="hero">
         <center><h1 style="font-family: 'Courier New', Courier, monospace; display:flex;">Welcome to GLORY INTERNATIONAL METACITY</h1></center>
-        <center><p  style="font-family: 'Courier New', Courier, monospace; display:contents">Building community and excellence together.</p></center>
+        <center><p  style="font-family: 'Courier New', Courier, monospace; ">Building community and excellence together.</p></center>
     </div>
 </body>
 </html>
