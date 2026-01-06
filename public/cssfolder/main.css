@@ -20,7 +20,7 @@ body{
 /* ================= HEADER ================= */
 .header 
 .topbar{
-    background-color:var(#e9e7f3) ;
+    background-color:var(--white) ;
 }
 
 .topbar{
