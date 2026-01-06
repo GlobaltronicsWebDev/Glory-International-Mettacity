@@ -18,123 +18,95 @@ body{
 }
 
 /* ================= HEADER ================= */
-.header 
-.topbar{
-    background-color:var(--white) ;
+.header-bg{
+  position: relative;
+  background: #ecebfd; /* light lavender */
+  padding: 28px 0 42px;
+  overflow: hidden;
 }
 
-.topbar{
-  position:relative;
-  padding:22px 26px;
+/* angled left cut */
+.header-bg::before{
+  content:"";
+  position:absolute;
+  left:-120px;
+  top:100%;
+  width:420px;
+  height:180px;
+  background:#ecebfd;
+  transform: rotate(-22deg);
+  transform-origin: top left;
+}
+
+/* angled right cut */
+.header-bg::after{
+  content:"";
+  position:absolute;
+  right:-120px;
+  top:100%;
+  width:420px;
+  height:180px;
+  background:#ecebfd;
+  transform: rotate(22deg);
+  transform-origin: top right;
+}
+
+/* inner content alignment */
+.header-inner{
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 28px;
   display:flex;
   align-items:center;
   justify-content:space-between;
+  position:relative;
+  z-index:2;
 }
 
-/* ================= LEFT NAV ================= */
-.nav-pill{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  background:var(--dark);
-  padding:10px 12px;
-  border-radius:999px;
-  box-shadow:0 12px 30px rgba(0,0,0,.18);
-}
-
-.nav-pill a,
-.nav-pill button{
-  color:#fff;
-  font-weight:700;
-  font-size:14px;
-  padding:10px 16px;
-  border-radius:999px;
-  background:none;
-  border:0;
-  cursor:pointer;
-  white-space:nowrap;
-  opacity:.92;
-}
-
-.nav-pill a:hover,
-.nav-pill button:hover{
-  background:rgba(255,255,255,.1);
-  opacity:1;
-}
-
-.nav-pill .active{
-  background:var(--accent);
-  color:var(--accentText);
-}
-
-/* ================= DROPDOWN ================= */
-.nav-dropdown{position:relative}
-
-.dropdown-menu{
-  position:absolute;
-  top:calc(100% + 10px);
-  left:0;
-  background:var(--dark);
-  border-radius:14px;
-  padding:8px;
-  min-width:180px;
-  box-shadow:0 18px 40px rgba(0,0,0,.35);
-  opacity:0;
-  transform:translateY(-6px);
-  pointer-events:none;
-  transition:.2s ease;
-  z-index:99;
-}
-
-.dropdown-menu a{
-  display:block;
-  padding:10px 14px;
-  border-radius:10px;
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.dropdown-menu a:hover{
-  background:rgba(97,214,207,.18);
-  color:var(--accent);
-}
-
-.nav-dropdown.open .dropdown-menu{
-  opacity:1;
-  transform:translateY(0);
-  pointer-events:auto;
-}
-
-.caret{
-  margin-left:6px;
-  font-size:12px;
-}
-
-/* ================= CENTER BRAND ================= */
+/* center logo platform illusion */
 .brand{
   position:absolute;
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
   text-align:center;
-  line-height:1;
-  pointer-events:none;
+  background:#ecebfd;
+  padding:10px 30px 6px;
 }
 
+.brand::before{
+  content:"";
+  position:absolute;
+  left:-26px;
+  top:0;
+  width:26px;
+  height:100%;
+  background:#ecebfd;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.brand::after{
+  content:"";
+  position:absolute;
+  right:-26px;
+  top:0;
+  width:26px;
+  height:100%;
+  background:#ecebfd;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* logo text */
 .brand .name{
-  font-size:clamp(26px,3.8vw,44px);
   font-weight:900;
+  font-size:38px;
   letter-spacing:.06em;
-  color:var(--brand);
-  transform:skewX(-10deg);
 }
 
 .brand .tag{
-  font-size:12px;
+  font-size:11px;
   letter-spacing:.28em;
-  margin-top:6px;
-  color:rgba(122,90,214,.9);
+  opacity:.75;
 }
 
 /* ================= RIGHT ACTIONS ================= */
