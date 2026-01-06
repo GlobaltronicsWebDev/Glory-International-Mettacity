@@ -147,7 +147,7 @@ body{
   background:var(--dark);
   color:#fff;
   padding:10px 12px 10px 16px;
-  border-radius:999px;
+  border-radius: 0px 40px 40px 0px;
   border:0;
   font-weight:800;
   cursor:pointer;
