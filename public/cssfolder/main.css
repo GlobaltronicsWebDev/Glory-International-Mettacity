@@ -65,6 +65,78 @@
       opacity:.9;
       transform: translateY(1px);
     }
+    /* Dropdown wrapper */
+.nav-dropdown{
+  position: relative;
+}
+
+/* Make button look like other nav links */
+.nav-link.dropdown-toggle{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--pillText);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  opacity:.92;
+}
+.nav-link.dropdown-toggle:hover{
+  background: rgba(255,255,255,.10);
+  opacity:1;
+}
+
+/* Dropdown menu */
+.dropdown-menu{
+  position:absolute;
+  top: calc(100% + 10px);
+  left:0;
+  min-width: 190px;
+  background: #0b0b12;
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  list-style:none;
+  margin:0;
+  opacity:0;
+  transform: translateY(-6px);
+  pointer-events:none;
+  transition: .2s ease;
+  z-index: 100;
+}
+
+/* Dropdown items */
+.dropdown-menu a{
+  display:block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+  font-size: 14px;
+  white-space:nowrap;
+}
+.dropdown-menu a:hover{
+  background: rgba(97,214,207,.18);
+  color:#61d6cf;
+}
+
+/* Open state */
+.nav-dropdown.open .dropdown-menu{
+  opacity:1;
+  transform: translateY(0);
+  pointer-events:auto;
+}
+
+/* Caret rotate */
+.nav-dropdown.open .caret{
+  transform: rotate(180deg);
+}
+
       /* CENTER BRAND (perfect center) */
     .brand{
       position:absolute;
