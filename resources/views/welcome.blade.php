@@ -7,8 +7,6 @@
     <!-- Include CSS using the asset helper for proper pathing -->
    <link rel="stylesheet" href="{{ asset('public/cssfolder/main.css') }}">
    <link rel="icon" href="{{ asset('public\favicon.ico') }}">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css/>
-
 </head>
 <body>
    <header class="topbar">
@@ -29,15 +27,10 @@
 
     <!-- RIGHT ACTIONS -->
     <div class="actions">
-    <button class="plan-visit-crescent">
-        <span class="plan-text">Plan Your Visit</span>
-
-        <span class="moon">
-            <span class="moon-cut"></span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </span>
-    </button>
-
+      <button class="visit-btn" type="button" id="visitBtn">
+        <span class="txt">Plan Your Visit</span>
+        <span class="arrow">→</span>
+      </button>
 
       <button class="icon" type="button" aria-label="Facebook">
         <svg viewBox="0 0 24 24" aria-hidden="true">
