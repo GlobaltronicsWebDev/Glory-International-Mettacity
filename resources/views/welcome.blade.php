@@ -6,7 +6,7 @@
     <title>@yield('title', 'GLORY INTERNATIONAL METACITY')</title>
     <!-- Include CSS using the asset helper for proper pathing -->
     <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
-    <link rel="icon" href="{{ asset('assets/favicon.ico.png') }}">
+    <link rel="icon" href="{{ asset('assets/favicon.icon.png') }}">
 </head>
 <body>
 
