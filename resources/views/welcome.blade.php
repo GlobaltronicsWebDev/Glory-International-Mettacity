@@ -66,6 +66,24 @@
     document.getElementById("visitBtn").addEventListener("click", () => {
       alert("Plan Your Visit clicked");
     });
+
+    const dropdown = document.querySelector(".nav-dropdown");
+  const toggle = dropdown.querySelector(".dropdown-toggle");
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("open");
+    toggle.setAttribute(
+      "aria-expanded",
+      dropdown.classList.contains("open")
+    );
+  });
+
+  // Close on outside click
+  document.addEventListener("click", () => {
+    dropdown.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
   </script>
 
 
