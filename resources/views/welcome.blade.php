@@ -25,7 +25,7 @@
                     <a href="{{ url('/enter') }}">Enter</a>
                 </li>
                 <li class="{{ request()->is('contact') ? 'active' : '' }}">
-                    <a href="{{ url('/contact') }}">Contact</a>
+                    <a href="{{ url('/') }}">Contact</a>
                 </li>
                 <li>
                     <a href="#">Merch ▾</a>
