@@ -10,7 +10,7 @@
 </head>
 <body>
    
-<div class="full-width-box">
+    <div class="full-width-box">
   Your content here
 </div>
 
