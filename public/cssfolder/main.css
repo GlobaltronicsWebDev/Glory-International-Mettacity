@@ -1,26 +1,203 @@
-
-
-
-
-
-
-
-
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    }
-
-.flex-items:nth-child(1) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --bg:#e9e7f3;
+  --dark:#0b0b12;
+  --white:#ffffff;
+  --accent:#61d6cf;
+  --accentText:#062324;
+  --yellow:#ffd400;
+  --brand:#7a5ad6;
+  --ring:rgba(0,0,0,.65);
 }
-    
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  font-family: "Poppins";  
+}
+
+/* ================= HEADER ================= */
+
+
+.topbar{
+  position:relative;
+  padding:22px 26px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* ================= LEFT NAV ================= */
+.nav-pill{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:var(--dark);
+  padding:10px 12px;
+  border-radius:999px;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.nav-pill a,
+.nav-pill button{
+  color:#fff;
+  font-weight:700;
+  font-size:14px;
+  padding:10px 16px;
+  border-radius:999px;
+  background:none;
+  border:0;
+  cursor:pointer;
+  white-space:nowrap;
+  opacity:.92;
+}
+
+.nav-pill a:hover,
+.nav-pill button:hover{
+  background:rgba(255,255,255,.1);
+  opacity:1;
+}
+
+.nav-pill .active{
+  background:var(--accent);
+  color:var(--accentText);
+}
+
+/* ================= DROPDOWN ================= */
+.nav-dropdown{position:relative}
+
+.dropdown-menu{
+  position:absolute;
+  top:calc(100% + 10px);
+  left:0;
+  background:var(--dark);
+  border-radius:14px;
+  padding:8px;
+  min-width:180px;
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+  opacity:0;
+  transform:translateY(-6px);
+  pointer-events:none;
+  transition:.2s ease;
+  z-index:99;
+}
+
+.dropdown-menu a{
+  display:block;
+  padding:10px 14px;
+  border-radius:10px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.dropdown-menu a:hover{
+  background:rgba(97,214,207,.18);
+  color:var(--accent);
+}
+
+.nav-dropdown.open .dropdown-menu{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+
+.caret{
+  margin-left:6px;
+  font-size:12px;
+}
+
+/* ================= CENTER BRAND ================= */
+.brand{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  line-height:1;
+  pointer-events:none;
+}
+
+.brand .name{
+  font-size:clamp(26px,3.8vw,44px);
+  font-weight:900;
+  letter-spacing:.06em;
+  color:var(--brand);
+  transform:skewX(-10deg);
+}
+
+.brand .tag{
+  font-size:12px;
+  letter-spacing:.28em;
+  margin-top:6px;
+  color:rgba(122,90,214,.9);
+}
+
+/* ================= RIGHT ACTIONS ================= */
+.actions{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+/* Plan Visit Button */
+.plan-visit{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:var(--dark);
+  color:#fff;
+  padding:10px 12px 10px px;
+  border-radius: 0px 40px 40px 0px;
+  border:0;
+  font-weight:800;
+  cursor:pointer;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.plan-visit__icon{
+  width:34px;
+  height:34px;
+  background:var(--yellow);
+  color:#000;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  font-size:18px;
+}
+
+/* Social Icons */
+.icon{
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  border:2px solid var(--ring);
+  display:grid;
+  place-items:center;
+  background:transparent;
+  cursor:pointer;
+}
+
+.icon svg{
+  width:18px;
+  height:18px;
+  fill:#000;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .topbar{flex-wrap:wrap;justify-content:center}
+  .brand{
+    position:static;
+    transform:none;
+    margin-bottom:10px;
+    pointer-events:auto;
+  }
+}
+
+@media(max-width:560px){
+  .plan-visit span:first-child{display:none}
+  .nav-pill{max-width:92vw;overflow:auto}
+}
