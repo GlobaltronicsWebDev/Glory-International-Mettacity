@@ -10,6 +10,9 @@
 </head>
 <body>
    
+<div class="full-width-box">
+  Your content here
+</div>
 
 
 </body>
