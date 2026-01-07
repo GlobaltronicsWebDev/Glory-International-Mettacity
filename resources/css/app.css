@@ -1,0 +1,10 @@
+/* Full-width box that stretches edge-to-edge with a solid border */
+.full-width-box {
+	box-sizing: border-box;
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	border: 2px solid #333;
+	padding: 1rem; /* optional spacing inside the box */
+}
+
