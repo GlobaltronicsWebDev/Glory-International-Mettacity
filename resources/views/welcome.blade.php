@@ -11,8 +11,9 @@
 <body>
     
    <header class="main-header">
-        <div class="container">
-
+        <div class="flex-container">
+            <div class="flex-items">
+            </div>
         </div>
    </header>
 

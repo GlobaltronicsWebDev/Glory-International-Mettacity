@@ -6,8 +6,21 @@
 
 
 
-.container{
-    border-radius: 20%;
-    border: 2px solid #000000;
-    background-color: #ff6666;
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    }
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
+    
