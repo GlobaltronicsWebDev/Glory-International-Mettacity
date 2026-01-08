@@ -23,7 +23,7 @@
   <div class="header-image">
 
     <!-- Center logo -->
-    <img src="METTACITY Logo.png" alt="Mettacity" class="header-logo">
+    <img src="{{asset('METTACITY Logo.png')}}" alt="Mettacity" class="header-logo">
 
     <!-- Plan Your Visit -->
     <a href="#visit" class="moon-btn">
