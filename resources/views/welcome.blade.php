@@ -12,7 +12,7 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="stylesheet" href="{{ asset('cssfolder/main.css') }}">
+  <link rel="stylesheet" href="{{ asset('public/ssfolder/main.css') }}">
   <link rel="icon" href="{{ asset('public\favicon.ico') }}">
 
 </head>
