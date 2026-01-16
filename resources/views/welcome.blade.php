@@ -9,6 +9,6 @@
 
 </head>
 <body>
-    
+    <img src="{{ asset ('favicon.ico') }}" alt="">
 </body>
 </html>
